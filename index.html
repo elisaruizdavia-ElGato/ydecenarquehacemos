@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!para poner el lenguaje español>
+  <head>
+    <title>Recetas simples</title>
+    <!para que se vea bien en el movil>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <meta
+      name="keywords"
+      content="paella, cocina española, dieta mediterránea, spanish food, mediterranean diet"
+    />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FQ8R8CC0X5"
+    ></script>
+
+    <!-- LO DEL GOOGLE ANALITICS -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FQ8R8CC0X5");
+    </script>
+
+    <!lo de la librería bootstrap>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/style.css" />
+    <!ESTILOS CREADOS POR MI>
+
+    
+
+    
+      <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+      <link
+        rel="canonical"
+        href="https://getbootstrap.com/docs/5.3/examples/album/"
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+      />
+
+      <link
+        href="/docs/5.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+      />
+
+      <meta name="theme-color" content="#712cf9" />
+    <style>
+      /* Estilo inicial para ocultar las tarjetas */
+      .tarjetas {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!la barra de arriba negra>
+
+        <a class="navbar-brand" href="index.html">Menú</a>
+        <!-- Botones -->
+        <button onclick="mostrarLista()">Lista</button>
+        <button onclick="mostrarTarjetas()">Tarjetas</button>
+      </nav>
+
+      <div
+        class="cover d-flex d-flex justify-content-center d-flex align-items-center flex-column"
+      >
+        <h1 class="titulo1">Recetas simples.</h1>
+      </div>
+    </header>
+    <nav>
+      <div class="menu">
+        <ol style="list-style-type: none"></ol>
+      </div>
+    </nav>
+
+    <!-- Lista -->
+    <ul id="lista" class="lista">
+      <section>
+        <div class="container mt-2 mb-3">
+          <div class="cardmenu">
+            <h4 class="titulo2">Entrantes</h4>
+            <div class="menu">
+              <ol style="list-style-type: none">
+                <li>
+                  <a class="navbar-brand" href="bacaladillasfritas.html"
+                    >Bacaladillas fritas
+                  </a>
+                </li>
+                <li>
+                  <a class="navbar-brand" href="bocatamiguelangel.html"
+                    >Bocata Miguel Ángel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="ensaladillarusa.html"
+                    id="ensaladilla-rusa"
+                    >Ensaladilla rusa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="ensaladadelentejasconsardinas.html"
+                    id="ensalada-sardinas"
+                    >Ensalada de lentejas con sardinas</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="michirones.html" id="michirones"
+                    >Michirones</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="pulpoalagallega.html"
+                    >Pulpo a la gallega</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="revueltodetriguerosconjamon.html"
+                    id="revuelto-trigueros"
+                    >Revuelto de trigueros con jamón</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="salmorejo.html" id="salmorejo"
+                    >Salmorejo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="salpicondemarisco.html"
+                    id="salpicon-marisco"
+                    >Salpicón de marisco</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="sopadeajo.html" id="sopa-ajo"
+                    >Sopa de ajo</a
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mt-2 mb-2">
+          <div class="cardmenu">
+            <h4 class="titulo2">Arroces</h4>
+            <div class="menu">
+              <ol style="list-style-type: none">
+                <li>
+                  <a class="navbar-brand" href="paellademarisco.html"
+                    >Arroz de marisco</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="paelladepolloconjudias.html"
+                    >Arroz de pollo con judías</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="paellademagroconverduras.html"
+                    >Arroz de magro con verduras</a
+                  >
+                </li>
+                <li><a class="navbar-brand" href="fideua.html">Fideuá</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mt-2 mb-2">
+          <div class="cardmenu">
+            <h4 class="titulo2">De cuchara</h4>
+            <div class="menu">
+              <ol style="list-style-type: none">
+                <li>
+                  <a class="navbar-brand" href="alubiasdelahuertacrockpot.html"
+                    >Alubias de la huerta (crockpot&#x1F372;)</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="arrozalacubana.html"
+                    >Arroz a la cubana</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="cocidomadrileño.html"
+                    >Cocido madrileño</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="cremadecalabaza.html"
+                    id="crema-calabaza"
+                    >Crema de calabaza</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="cremadepuerro.html"
+                    id="crema-puerro"
+                    >Crema de puerro</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="fabadacrockpot.html"
+                    >Fabada (crockpot&#x1F372;)</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="gazpachomanchego.html"
+                    >Gazpacho manchego</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand"
+                    href="hervidodejudias.html"
+                    id="hervido-judias"
+                    >Hervido de judías</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="lentejascrockpot.html"
+                    >Lentejas (crockpot&#x1F372;)</a
+                  >
+                </li>
+                <li>
+                  <a class="navbar-brand" href="terneraensalsa.html"
+                    >Ternera en salsa</a
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </ul>
+
+    <!-- Tarjetas (inicialmente ocultas) -->
+    <div id="tarjetas" class="tarjetas"></div>
+    <div class="container mt-2 mb-2">
+        <div class="cardmenu">
+          <h4 class="titulo2">Entrantes</h4>
+
+          <div class="menu"></div>
+        </div>
+      </div>
+    <section>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/bacaladillasfritas.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/bacaladillas-normal?v=1681640416004"
+                      alt="Bacaladillas fritas"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Bacaladillas fritas</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Bacaladillas, aceite.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/bocatamiguelangel.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/bocata.PNG?v=1677406647866"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Bocata de pechuga empanada</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Pechuga empanada, pan, bacon, brotes
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/ensaladillarusa.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/23ce66fd-70f1-4fb6-8b78-14dc915e15df/image06.jpg?v=1666954538522"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Ensaladilla rusa</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Patatas, mahonesa, atún, huevo
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/ensaladadesardinas.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/ensaladadesardinas.png?v=1679073369768"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">
+                      Ensalada de lentejas con sardinas
+                    </div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Sardinas, lentejas</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">10 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/michirones.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/michis.png?v=1677412401748"
+                      alt="Bacaladillas fritas"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Michirones</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Habas, chorizo, pimentón</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/pulpoalagallega.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/pulpo.png?v=1677412651802"
+                      alt="Bacaladillas fritas"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Pulpo a la gallega</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Pulpo, pimentón, patatas.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a
+                  href="https://www.recetassimples.es/revueltodetriguerosconjamon.html"
+                >
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image11.jpg?v=1672143154434"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Revuelto de trigueros</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Espárragos, huevo.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">10 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/salmorejo.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/salmorejo.jpg?v=1675094800832"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Salmorejo</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Tomate, pan, huevo, jamón</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/salpicondemarisco.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/salpicon.png?v=1677407566580"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Salpicón de marisco</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Pota, pimiento, cebolleta, palitos de surimi
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/sopadeajo.html">
+                  <div style="position: relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image12.jpg?v=1672221032483"
+                      class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                    />
+                    <div class="texto_centrado">Sopa de ajo</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Ajo, chorizo, pan, huevo, pimentón.
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<div class="container mt-2 mb-2">
+        <div class="cardmenu">
+          <h4 class="titulo2">Arroces</h4>
+
+          <div class="menu"></div>
+        </div>
+      </div>
+    <section>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a
+                  href="https://www.recetassimples.es/paelladepolloconjudias.html"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/paella-normal.png?v=1681658783633"
+                    />
+                    <div class="texto_centrado">Arroz de pollo con judias</div>
+                  </div>
+                </a>
+
+                <div class="card-body">
+                  <p class="card-text-negrita">Arroz, pollo, verduras.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">1 h</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/paellademarisco.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image25.jpg?v=1672222708066"
+                      alt="Paella de marisco"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Arroz de marisco</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Arroz, caldo, marisco.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a
+                  href="https://www.recetassimples.es/paellademagroconverduras.html"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/paellamagroconverduras-normal?v=1682429509709"
+                      alt="Paella de marisco"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">
+                      Arroz de magro con verduras
+                    </div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Arroz, magro, verduras.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/fideua.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/fideua-normal?v=1672331361681"
+                      alt="Paella de marisco"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Fideuá</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Fideos, caldo, marisco.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-2 mb-2">
+        <div class="cardmenu">
+          <h4 class="titulo2">De cuchara</h4>
+
+          <div class="menu"></div>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a
+                  href="https://www.recetassimples.es/alubiasdelahuertacrockpot.html"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image09.jpg?v=1672332574992"
+                    />
+                    <div class="texto_centrado">
+                      Alubias de la huerta crockpot
+                    </div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Alubias, chorizo, verduras.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">4 h</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/arrozalacubana.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/arrozalacubana-normal.png?v=1680348284989"
+                    />
+                    <div class="texto_centrado">Arroz a la cubana</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Arroz, tomate frito, huevo, carne, plátano.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/cocidomadrileño.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/cocido.jpg?v=1706477850596"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Cocido madrileño</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Garbanzos, carne, verduras.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/cremadecalabaza.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image16.jpg?v=1672142533646"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Crema de calabaza</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Calabaza, cebolla, nata.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/cremadepuerro.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/cremadepuerro.png?v=1686409724566"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Crema de puerro</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Puerro, cebolla, nata.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">20 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/fabadacrockpot.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/alubiascrockpot.PNG?v=1692531428623"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Fabada crockpot</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Alubias, chorizo.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/gazpachomanchego.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image23.jpg?v=1672482435044"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Gazpacho manchego</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Gazpacho, carne, ajo, tomate, especias de gazpacho.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">40 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/hervidodejudias.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/hervido.PNG?v=1677411859325"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Hervido de judias</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">
+                    Judías verdes, cebolla, patata.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://www.recetassimples.es/hervidodejudias.html"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver</a
+                      >
+                    </div>
+                    <small class="text-body-secondary">10 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/lentejascrockpot.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/lentejascrockpot-normal?v=1672334631252"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Lentejas crockpot</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Lentejas, chorizo, cebolla.</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">4 horas</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm custom-card">
+                <a href="https://www.recetassimples.es/terneraensalsa.html">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/terneraensalsa-normal.png?v=1683445916818"
+                      class="bd-placeholder-img card-img-top"
+                    />
+                    <div class="texto_centrado">Ternera en salsa</div>
+                  </div>
+                </a>
+                <div class="card-body">
+                  <p class="card-text-negrita">Calabaza, cebolla, nata.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-body-secondary">10 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function mostrarLista() {
+        document.getElementById("lista").style.display = "block";
+        document.getElementById("tarjetas").style.display = "none";
+      }
+
+      function mostrarTarjetas() {
+        document.getElementById("lista").style.display = "none";
+        document.getElementById("tarjetas").style.display = "flex"; // Utilizamos flex para que las tarjetas se muestren una al lado de la otra
+      }
+    </script>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Volver arriba</a>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
