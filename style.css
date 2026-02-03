@@ -1,292 +1,108 @@
-/*****************************************************************************
-LOS ESTILOS
-******************************************************************************/
-
-
+/* -------------------------------
+   Estilos generales
+---------------------------------*/
 
 body {
-  
-  background-color: #fcd7c; 
-  
+  background-color: #fcd7c;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-
-
-
-  .cover { /*la portada*/
-  height: 100px;
-  background-image: url(https://cdn.glitch.global/23ce66fd-70f1-4fb6-8b78-14dc915e15df/plantas.jpg?v=1666954660041);
-  background-size: cover;
-  background-position: center;
-}
-  
-  .containercolum {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    
-   
-  } 
-  .column {
-    flex: 1;
-    background-color: white;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  @media (max-width: 768px) {
-    .containercolum {
-      flex-direction: column;
-    }
-  }
-  
-.contenedor {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  object-fit: cover
-  
-}
-
-.imagen_blanquecina {
-  display: block;
-  width: 100%;
-  border-radius: 1px;
-  
-  object-fit: cover;
-  filter: opacity(0.3) brightness(100%);
-}
-  
-  
-  
-.imagen2 {
-  width: 100%;
-  border-radius: 1px;
-  float: right;
-  filter: opacity(0.3) brightness(100%);
-}
-
-  
-
-
-.texto_superpuesto {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.containercolum {
   display: flex;
-  flex-direction: column; /* Alinear los párrafos uno debajo del otro */
-  justify-content: flex-start; /* Alinear los párrafos en la parte superior */
-  align-items: center;
-  font-style: italic;
-  color: #332F2C;
-  font-size:90%;
-  pointer-events: none; /* Evitar que el texto afecte la interacción con la imagen */
-  
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.texto_superpuesto p {
-  margin: 10px;
-  text-align: center;
-  
-}
-  
-  
-
-.texto_cuadro {
-  border: 2px solid #a87954;
-    background-color: white;
-    padding: 20px;
-  font-style: italic;
-  
-  
-  
-  
-  }
-
-
-.texto_centrado {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 18px;
-color: white;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-text-align: center;
-  }
-  
-.card {
-  
-   
-  border: 0 !important;
-  border-radius: 0px;
-  max-width: 600px;
-  color: #464646;
+.column {
+  flex: 1;
   background-color: white;
-  
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-
-
-
-.ingredientes {
-  
-  line-height: 100%;
-  font-size: 90%;
-  background-size: cover;
-  background-position: center;
-  padding: 10px;
+@media (max-width: 768px) {
+  .containercolum {
+    flex-direction: column;
+  }
 }
 
-.instrucciones {
-  margin: 10px;
-  line-height: 130%;
-  font-size: 100%;
-}
-  
-.item {
-    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse sobre los elementos de lista */
-}
+/* -------------------------------
+   Ingredientes
+---------------------------------*/
 
-.tachado {
-    text-decoration: line-through; /* Aplica el estilo de tachado a los elementos de lista */
-    color: gray; /* Cambia el color de los elementos de lista a gris */
+.ingredientes ul {
+  padding-left: 20px;
+  margin: 0;
 }
 
+.ingredientes li.item {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
 
- 
- 
+/* -------------------------------
+   Instrucciones
+---------------------------------*/
+
+.instrucciones p {
+  margin-bottom: 10px;
+}
+
+.card input[type="checkbox"] + label {
+  display: block;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.card input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* -------------------------------
+   Destacados y marcas
+---------------------------------*/
 
 .fosforito {
   background-color: #f9eaca;
-  height: 0.3em; 
 }
 
+/* -------------------------------
+   Imágenes
+---------------------------------*/
 
-
-
-
-/* Agregamos esta regla para aplicar el tachado al texto cuando el checkbox está marcado */
-.card input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  color: grey;
-}
-
-
-
-    
-
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-    
-
-
-
-
-.card-text-negrita {/* ingredientes básicos */
-  font-weight: bold;
-  color: #944b35;
-}
-
-  
-
-
-
-
-
-/* Estilo para la imagen en la tarjeta ESTA VALE*/
-.custom-card img {
+.imagen {
   width: 100%;
-  height: 225px; /* Altura deseada */
-  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
+  height: auto;
+  border-radius: 3px;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
+/* -------------------------------
+   Títulos
+---------------------------------*/
 
+.column h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
+/* -------------------------------
+   Card
+---------------------------------*/
 
-
-
-
-
-
-
-
-
-  
-  
+.card {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
