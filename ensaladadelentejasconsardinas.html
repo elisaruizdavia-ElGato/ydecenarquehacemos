@@ -1,77 +1,66 @@
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Recetas simples</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Menú</a>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ensalada de lentejas con sardinas – Recetas simples</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">← Menú</a>
+      </div>
+    </nav>
+  </header>
 
-      </nav>
-    </header>
+  <div class="titulo-receta">
+    <h1>Ensalada de lentejas con sardinas</h1>
+  </div>
 
-    <div class="titulo">
-      <h4>Ensalada de lentejas con sardinas</h4>
+  <div class="receta-wrapper">
+
+    <div class="card-ingredientes">
+      <h2>Ingredientes</h2>
+      <ul class="ingredientes">
+        <li>1 lata de sardinas</li>
+        <li>1 lata de maíz</li>
+        <li>½ pepino</li>
+        <li>½ tomate</li>
+        <li>½ cebolleta</li>
+        <li>½ minibote de lentejas (o pasta)</li>
+      </ul>
     </div>
 
-    <div class="container mt-0 mb-2">
-      <div class="card">
-        <div class="ingredientes">
-         <li class="item">1 lata de sardinas</li>
-<li class="item">1 lata de maíz</li>
-<li class="item">1/2 pepino</li>
-<li class="item">1/2 tomate</li>
-<li class="item">1/2 cebolleta</li>
-<li class="item">1/2 minibote de lentejas o pasta</li>
-<script src="script.js"></script>
-
-          
-          
-        </div>
+    <div class="card-instrucciones">
+      <h2>Preparación</h2>
+      <div class="paso">
+        <input type="checkbox" id="paso1" />
+        <label for="paso1">
+          <b>Cortar.</b> Cortar todas las <mark>verduras</mark> y poner en el bol.
+        </label>
+      </div>
+      <div class="paso">
+        <input type="checkbox" id="paso2" />
+        <label for="paso2">
+          <b>Lentejas.</b> Lavar las <mark>lentejas</mark> en un colador y echar al bol.
+        </label>
+      </div>
+      <div class="paso">
+        <input type="checkbox" id="paso3" />
+        <label for="paso3">
+          <b>Aliñar.</b> Echar <mark>aceite, vinagre, sal y pimienta</mark>.
+        </label>
       </div>
     </div>
-    <div class="container mt-0 mb-0">
-      <div class="card">
-        <div class="instrucciones">
-          <p>
-            <input type="checkbox" value="" /> <b>Cortar.</b> Se cortan todas las 
-            <mark class="fosforito">verduras</mark>  se ponen en el bol.
-          </p>
 
-          <p>
-            <input type="checkbox" value="" /> <b>En un colador. </b> Se lavan las
-            <mark class="fosforito">lentejas</mark> y se echan al bol .
-          </p>
+    <img class="imagen-receta" src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/ensaladadesardinas.png?v=1679073369768" alt="Ensalada de lentejas con sardinas" />
 
-          <p>
-            <input type="checkbox" value="" /> <b>Aliñar.</b> Echar
-            <mark class="fosforito">aceite,</mark>
-            <mark class="fosforito">vinagre,</mark>
-            <mark class="fosforito">sal,</mark> y un poco de
-            <mark class="fosforito">pimienta.</mark>
-            con los ingredientes troceados.
-          </p>
-        </div>
-        <image
-          class="imagen"
-          src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/ensaladadesardinas.png?v=1679073369768"
-        >
-        </image>
-        <meta
-          property="og:image"
-          content="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/ensaladadesardinas.png?v=1679073369768"
-        />
-      </div>
-    </div>
-  </body>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2JD1N/z7y6/5OBU+cF1JigU2wRAKcF5dKTFJc0y2z8pp7rfH5G8pJfH/Xg" crossorigin="anonymous"></script>
+</body>
 </html>

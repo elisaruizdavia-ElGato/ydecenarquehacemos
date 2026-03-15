@@ -1,29 +1,59 @@
-<div class="containercolum">
-  <div class="column">
-    <h5>Bacaladillas fritas</h5>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bacaladillas fritas – Recetas simples</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">← Menú</a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="ingredientes">
-      <ul>
-        <li class="item">7 bacaladillas por persona</li>
-        <li class="item">1 vaso de aceite de girasol</li>
-        <li class="item">3 cucharadas de harina (trigo o maicena)</li>
+  <div class="titulo-receta">
+    <h1>Bacaladillas fritas</h1>
+  </div>
+
+  <div class="receta-wrapper">
+
+    <div class="card-ingredientes">
+      <h2>Ingredientes</h2>
+      <ul class="ingredientes">
+        <li>7 bacaladillas por persona</li>
+        <li>1 vaso de aceite de girasol</li>
+        <li>3 cucharadas de harina (trigo o maicena)</li>
       </ul>
     </div>
 
-    <div class="card mt-2 mb-2">
-      <div class="instrucciones">
-        <p>
-          <input type="checkbox" id="instruccion1" /> 
-          <label for="instruccion1">En la sartén se echa el <mark class="fosforito">aceite de girasol</mark> hasta que cubra media sartén aproximadamente.</label>
-        </p>
-        <p>
-          <input type="checkbox" id="instruccion2" />
-          <label for="instruccion2">Se echa en un <b>plato hondo la</b> <mark class="fosforito">harina</mark> y se restriegan las <mark class="fosforito">bacaladillas</mark> para que se les pegue la harina, y se echan en la sartén con el aceite muy caliente. Se sacan cuando estén doraditas, aproximadamente a los 10 minutos.</label>
-        </p>
+    <div class="card-instrucciones">
+      <h2>Preparación</h2>
+      <div class="paso">
+        <input type="checkbox" id="paso1" />
+        <label for="paso1">
+          <b>En la sartén.</b> Echar el <mark>aceite de girasol</mark> hasta cubrir media sartén aproximadamente.
+        </label>
       </div>
-
-      <img id="bacaladillas" class="imagen" src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/bacaladillas-normal?v=1681640416004"
-           onclick="cambiarImagen('bacaladillas')" />
+      <div class="paso">
+        <input type="checkbox" id="paso2" />
+        <label for="paso2">
+          <b>Enharinar y freír.</b> En un plato hondo echar la <mark>harina</mark> y rebozar las
+          <mark>bacaladillas</mark> para que se les pegue. Echarlas en la sartén con el aceite muy caliente.
+          Sacar cuando estén doraditas, unos 10 minutos.
+        </label>
+      </div>
     </div>
+
+    <img class="imagen-receta" src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/bacaladillas-normal?v=1681640416004" alt="Bacaladillas fritas" />
+
   </div>
-</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2JD1N/z7y6/5OBU+cF1JigU2wRAKcF5dKTFJc0y2z8pp7rfH5G8pJfH/Xg" crossorigin="anonymous"></script>
+</body>
+</html>

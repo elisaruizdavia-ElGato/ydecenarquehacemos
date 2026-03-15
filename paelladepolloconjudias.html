@@ -1,80 +1,65 @@
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Recetas simples</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/rollover.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Menú</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arroz de pollo con judías – Recetas simples</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">← Menú</a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="titulo">
-      <h4>Arroz de pollo con judías</h4>
+  <div class="titulo-receta">
+    <h1>Arroz de pollo con judías</h1>
+  </div>
+
+  <div class="receta-wrapper">
+
+    <div class="card-ingredientes">
+      <h2>Ingredientes</h2>
+      <ul class="ingredientes">
+        <li>180 g de arroz</li>
+        <li>300 ml de caldo para paella de pollo</li>
+        <li>300 ml de judías verdes y blancas</li>
+        <li>250 g de pollo (contramuslo deshuesado)</li>
+        <li>2 cucharadas de tomate frito (o ½ tomate)</li>
+        <li>3 dientes de ajo</li>
+        <li>Colorante para paella</li>
+      </ul>
     </div>
 
-    <div class="container mt-0 mb-2">
-      <div class="card">
-        <div class="ingredientes">
-         <li class="item">180 g de arroz</li>
-<li class="item">300 ml de caldo para paella de pollo</li>
-<li class="item">300 ml de judías verdes y blancas</li>
-<li class="item">250 g de pollo (contramuslo deshuesado, por ejemplo)</li>
-<li class="item">2 cucharadas de tomate frito o 1/2 tomate</li>
-<li class="item">3 dientes de ajo</li>
-<script src="script.js"></script>
-
-        </div>
+    <div class="card-instrucciones">
+      <h2>Preparación</h2>
+      <div class="paso">
+        <input type="checkbox" id="paso1" />
+        <label for="paso1">
+          <b>En el paellero.</b> Calentar un chorro de <mark>aceite de oliva</mark> y echar los
+          <mark>ajos</mark> con piel, el <mark>pollo</mark> a trocitos, las <mark>judías verdes y blancas</mark>
+          y el <mark>tomate</mark>. Cuando esté dorado echar el <mark>caldo</mark>, 300 ml de
+          <mark>agua</mark>, el <mark>arroz</mark> y el <mark>colorante</mark>. Hervir bajo 30 min.
+        </label>
+      </div>
+      <div class="paso">
+        <input type="checkbox" id="paso2" />
+        <label for="paso2">
+          <b>Vigilar el arroz.</b> Ir viendo que el arroz deje de estar duro pero que no se pase.
+          Si falta agua, añadir un poco. Dejar reposar 10 min.
+        </label>
       </div>
     </div>
-    <div class="container mt-0 mb-0">
-      <div class="card">
-        <div class="instrucciones">
-          <p>
-            <input type="checkbox" value="" /> <b>En el paellero.</b> Calentar un chorro de 
-            <mark class="fosforito">aceite de oliva</mark>
 
-            en el paellero y echar los
-            <mark class="fosforito">ajos</mark>
-            con piel, el 
-            <mark class="fosforito">pollo</mark> cortado a trocitos, las
-            <mark class="fosforito">judías verdes y blancas</mark> y el
-            <mark class="fosforito">tomate</mark> a trocitos (o el tomate frito, l oque haya). Cuando se haya dorado
-            echar el
-            <mark class="fosforito">caldo</mark> y 300 ml de 
-            <mark class="fosforito">agua</mark> y el 
-             <mark class="fosforito">arroz</mark>
-             <mark class="fosforito">colorante para paella</mark>
-            y que hierva bajo 30 min. 
-          </p>
+    <img class="imagen-receta" src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/paella-normal.png?v=1681658783633" alt="Arroz de pollo con judías" />
 
-          <p>
-            <input type="checkbox" value="" /> <b>Vigilar el arroz. </b>Ir viendo que el arroz deje de estar duro 
-            pero que no se pase. Si falta se echa más agua. Dejar reposar 10 minutos.
-            
-          </p>
+  </div>
 
-         
-        </div>
-        
-        
-        
-        <img id="fideua" class="imagen" src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/paella-normal.png?v=1681658783633"
-          onclick="cambiarImagen('fideua')"/>
-        
-        
-      </div>
-    </div>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2JD1N/z7y6/5OBU+cF1JigU2wRAKcF5dKTFJc0y2z8pp7rfH5G8pJfH/Xg" crossorigin="anonymous"></script>
+</body>
 </html>
