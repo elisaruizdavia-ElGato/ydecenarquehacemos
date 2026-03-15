@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Crema de calabaza – Recetas simples</title>
+  <!-- CAMBIAR: nombre de la receta -->
+  <title>NOMBRE RECETA – Recetas simples</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
@@ -20,52 +21,65 @@
     </nav>
   </header>
 
+  <!-- CAMBIAR: nombre de la receta -->
   <div class="titulo-receta">
-    <h1>Crema de calabaza</h1>
+    <h1>NOMBRE RECETA</h1>
   </div>
 
   <div class="receta-wrapper">
 
-    <!-- Ingredientes -->
+    <!-- ========================
+         INGREDIENTES
+         Añade o quita <li> según necesites.
+         Para subapartados (especias, etc.) añade class="sub" al <li>
+    ========================= -->
     <div class="card-ingredientes">
       <h2>Ingredientes</h2>
       <ul class="ingredientes">
-        <li>500 g de calabaza</li>
-        <li>1 cebolla (o cebolleta)</li>
-        <li>1 zanahoria (y/o manzana)</li>
-        <li>½ cubo de caldo de verdura</li>
-        <li>1 cucharada grande de queso de untar (o 100 ml de nata)</li>
-        <li>Especias: pimienta, cúrcuma, jengibre</li>
+        <li>Ingrediente 1</li>
+        <li>Ingrediente 2</li>
+        <li>Ingrediente 3</li>
+        <!-- Ejemplo subapartado: -->
+        <!-- <li class="sub">Especias: laurel, pimentón</li> -->
       </ul>
     </div>
 
-    <!-- Pasos -->
+    <!-- ========================
+         PASOS
+         Duplica el bloque .paso para cada paso.
+         Cambia id="pasoN" incrementando el número.
+         Usa <mark>palabra clave</mark> para resaltar en amarillo.
+    ========================= -->
     <div class="card-instrucciones">
       <h2>Preparación</h2>
 
       <div class="paso">
         <input type="checkbox" id="paso1" />
         <label for="paso1">
-          <b>Hervir en un cazo.</b> Echar la <mark>calabaza, cebolleta y zanahoria</mark>
-          troceadas junto al <mark>cubo de verdura</mark>. Cubrir con agua (no mucha, para no
-          tener que tirar después). Cocer unos 20 min.
+          <b>Título del paso.</b> Descripción del paso con <mark>ingredientes clave</mark> resaltados.
         </label>
       </div>
 
       <div class="paso">
         <input type="checkbox" id="paso2" />
         <label for="paso2">
-          <b>Triturar.</b> Con la batidora, triturar todo junto al <mark>queso de untar (o nata)</mark>
-          controlando la textura. Decorar con un chorro de <mark>aceite y las especias</mark>.
+          <b>Título del paso.</b> Descripción del paso con <mark>ingredientes clave</mark> resaltados.
         </label>
       </div>
+
+      <!-- Añade más pasos copiando el bloque .paso de arriba -->
+
     </div>
 
-    <!-- Imagen -->
+    <!-- ========================
+         IMAGEN (opcional)
+         Cambia src por la URL de tu imagen.
+         Si no tienes imagen, borra este bloque.
+    ========================= -->
     <img
       class="imagen-receta"
-      src="https://cdn.glitch.global/fb25a3ae-8a7b-4e85-be46-53018fcb8de1/image16.jpg?v=1672142533646"
-      alt="Crema de calabaza"
+      src="URL_DE_TU_IMAGEN"
+      alt="NOMBRE RECETA"
     />
 
   </div><!-- /receta-wrapper -->
